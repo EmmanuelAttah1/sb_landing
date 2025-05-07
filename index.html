@@ -91,6 +91,9 @@
         .yellow { background-color: #ffbd2e; }
         .green { background-color: #27c93f; }
 
+        .yellow-text { color: #ffbd2e; }
+        .green-text { color: #27c93f; }
+
         .terminal-content {
             padding: 1.5rem;
         }
@@ -228,8 +231,17 @@
                   <span class="circle yellow"></span>
                   <span class="circle green"></span>
                 </div>
-                <!-- <div class="terminal-content">
-                  <div class="terminal-title">
+                <div class="terminal-content">
+                    <h4>$ sb extract --reusables</h4>
+                    <h4>$ ##### Found 5 reusable features #####</h4>
+                    <h4>$ --------------------------------------</h4>
+                    <h4>$ - <span class="green-text">Extracted dir/feature</span></h4>
+                    <h4>$ \ <span class="yellow-text">Extracting dir/feature</span></h4>
+                    <h4>$ - Pending dir/feature </h4>
+                    <h4>$ - Pending dir/feature </h4>
+                    <h4>$ - Pending dir/feature </h4>
+                    <h4>$ --------------------------------------</h4>
+                  <!-- <div class="terminal-title">
                     <span class="brand">SpeedBuild</span>
                     <span class="version">v1.0</span>
                   </div>
@@ -238,8 +250,8 @@
                     <li class="checked">✔ Feature code</li>
                     <li class="checked">✔ Getting <span>Django configuration</span></li>
                     <li class="unchecked">○ Getting <span>dependencies</span></li>
-                  </ul>
-                </div> -->
+                  </ul> -->
+                </div>
             </div>  
             <!-- <img class="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full" src="/api/placeholder/800/600" alt="SpeedBuild Dashboard"> -->
         </div>
@@ -582,6 +594,7 @@ speedbuild import auth_system new_project
                                     </svg>
 
                                 </div>
+                                <p class="ml-3 text-sm text-gray-700 transition-colors duration-200">Team Collaboration</p>
                             </li>
                             <li class="flex items-start">
                                 <div class="flex-shrink-0">
@@ -591,7 +604,7 @@ speedbuild import auth_system new_project
                                     </svg>
 
                                 </div>
-                                <p class="ml-3 text-sm text-gray-700 transition-colors duration-200">Cloud-hosted</p>
+                                <p class="ml-3 text-sm text-gray-700 transition-colors duration-200">Shared features templates and Private hub</p>
                             </li>
                         </ul>
                         <a href="#" class="mt-8 block w-full bg-gray-50 border border-gray-300 rounded-md py-2 text-sm font-semibold text-gray-700 text-center hover:bg-gray-100 transition-colors duration-200">
@@ -607,7 +620,7 @@ speedbuild import auth_system new_project
                             <span class="text-4xl font-extrabold tracking-tight">Talk to Sales</span>
                         </p>
                         <p class="mt-6 text-gray-500 transition-colors duration-200">
-                            For Companies
+                            For Companies with custom needs
                         </p>
 
                         <ul class="mt-6 space-y-4">
