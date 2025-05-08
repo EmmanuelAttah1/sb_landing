@@ -70,6 +70,7 @@
             font-family: 'JetBrains Mono', monospace;
             color: #f4f4f5;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+            z-index: 10;
             /* padding: 0px 30px; */
         }
 
@@ -141,6 +142,18 @@
         .terminal-checklist li span {
             color: #888;
             margin-left: 5px;
+        }
+
+        /* @media only screen and (max-width: 1000px) {
+            .terminal-mockup {
+                margin: 0;
+            }
+        } */
+
+        @media only screen and (max-width: 500px) {
+            .terminal-mockup {
+                margin: 20px;
+            }
         }
     </style>
 </head>
@@ -235,25 +248,14 @@
                     <h4>$ sb extract --reusables</h4>
                     <h4>$ ##### Found 5 reusable features #####</h4>
                     <h4>$ --------------------------------------</h4>
-                    <h4>$ - <span class="green-text">Extracted dir/feature</span></h4>
-                    <h4>$ \ <span class="yellow-text">Extracting dir/feature</span></h4>
-                    <h4>$ - Pending dir/feature </h4>
-                    <h4>$ - Pending dir/feature </h4>
-                    <h4>$ - Pending dir/feature </h4>
+                    <h4>$ * <span class="green-text">Extracted services/email_service</span></h4>
+                    <h4>$ \ <span class="yellow-text">Extracting api/v1/auth</span></h4>
+                    <h4>$ - Pending auth/oauth_google </h4>
+                    <h4>$ - Pending api/v1/user_profile </h4>
+                    <h4>$ - Pending analytics/user_metrics </h4>
                     <h4>$ --------------------------------------</h4>
-                  <!-- <div class="terminal-title">
-                    <span class="brand">SpeedBuild</span>
-                    <span class="version">v1.0</span>
-                  </div>
-                  <div class="terminal-subtitle">Extracting Features</div>
-                  <ul class="terminal-checklist">
-                    <li class="checked">✔ Feature code</li>
-                    <li class="checked">✔ Getting <span>Django configuration</span></li>
-                    <li class="unchecked">○ Getting <span>dependencies</span></li>
-                  </ul> -->
                 </div>
             </div>  
-            <!-- <img class="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full" src="/api/placeholder/800/600" alt="SpeedBuild Dashboard"> -->
         </div>
     </div>
 
@@ -407,16 +409,16 @@
             </div>
             <div class="mt-10 bg-gray-900 rounded-lg overflow-hidden shadow-xl">
                 <div class="px-4 py-5 sm:p-6">
-<pre class="text-green-400 text-sm overflow-x-auto">
-# Install SpeedBuild
-pip install speedbuild
+                    <pre class="text-green-400 text-sm overflow-x-auto">
+                        # Install SpeedBuild
+                        pip install speedbuild
 
-# Extract features from existing project
-speedbuild extract my_django_project
+                        # Extract features from existing project
+                        sb extract my_django_project
 
-# Import features into new project
-speedbuild import auth_system new_project
-</pre>
+                        # Import features into new project
+                        sb deploy auth_system
+                    </pre>
                 </div>
             </div>
             <div class="mt-8 flex justify-center">
@@ -509,9 +511,9 @@ speedbuild import auth_system new_project
                             <li class="flex items-start">
                                 <div class="flex-shrink-0">
                                     
-<svg class="h-6 w-6 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-</svg>
+                                    <svg class="h-6 w-6 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                    </svg>
 
                                 </div>
                                 <p class="ml-3 text-sm text-gray-700 transition-colors duration-200">Self-hosted version</p>
@@ -519,9 +521,9 @@ speedbuild import auth_system new_project
                             <li class="flex items-start">
                                 <div class="flex-shrink-0">
                                     
-<svg class="h-6 w-6 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-</svg>
+                                    <svg class="h-6 w-6 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                    </svg>
 
                                 </div>
                                 <p class="ml-3 text-sm text-gray-700 transition-colors duration-200">Feature extraction</p>
@@ -529,9 +531,9 @@ speedbuild import auth_system new_project
                             <li class="flex items-start">
                                 <div class="flex-shrink-0">
                                     
-<svg class="h-6 w-6 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-</svg>
+                                    <svg class="h-6 w-6 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                    </svg>
 
                                 </div>
                                 <p class="ml-3 text-sm text-gray-700 transition-colors duration-200">Local template library</p>
@@ -539,12 +541,12 @@ speedbuild import auth_system new_project
                             <li class="flex items-start">
                                 <div class="flex-shrink-0">
                                     
-<svg class="h-6 w-6 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-</svg>
+                                    <svg class="h-6 w-6 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                    </svg>
 
                                 </div>
-                                <p class="ml-3 text-sm text-gray-700 transition-colors duration-200">GitHub repository</p>
+                                <p class="ml-3 text-sm text-gray-700 transition-colors duration-200">Use your own LLM API Key or 10 free LLM API request</p>
                             </li>
                         </ul>
                     </div>
@@ -558,7 +560,7 @@ speedbuild import auth_system new_project
                     <div class="flex-1">
                         <h3 class="text-xl font-semibold text-gray-900 transition-colors duration-200">Pro</h3>
                         <p class="mt-4 flex items-baseline text-gray-900 transition-colors duration-200">
-                            <span class="text-5xl font-extrabold tracking-tight">$19</span>
+                            <span class="text-5xl font-extrabold tracking-tight">$30</span>
                             <span class="ml-1 text-xl font-semibold">/month</span>
                         </p>
                         <p class="mt-6 text-gray-500 transition-colors duration-200">
@@ -594,7 +596,7 @@ speedbuild import auth_system new_project
                                     </svg>
 
                                 </div>
-                                <p class="ml-3 text-sm text-gray-700 transition-colors duration-200">Team Collaboration</p>
+                                <p class="ml-3 text-sm text-gray-700 transition-colors duration-200">Collaborate: features templates and Private hub</p>
                             </li>
                             <li class="flex items-start">
                                 <div class="flex-shrink-0">
@@ -604,7 +606,7 @@ speedbuild import auth_system new_project
                                     </svg>
 
                                 </div>
-                                <p class="ml-3 text-sm text-gray-700 transition-colors duration-200">Shared features templates and Private hub</p>
+                                <p class="ml-3 text-sm text-gray-700 transition-colors duration-200">100 LLM API request </p>
                             </li>
                         </ul>
                         <a href="#" class="mt-8 block w-full bg-gray-50 border border-gray-300 rounded-md py-2 text-sm font-semibold text-gray-700 text-center hover:bg-gray-100 transition-colors duration-200">
@@ -652,7 +654,7 @@ speedbuild import auth_system new_project
                                     </svg>
 
                                 </div>
-                                <p class="ml-3 text-sm text-gray-700 transition-colors duration-200">Cloud-hosted</p>
+                                <p class="ml-3 text-sm text-gray-700 transition-colors duration-200">Unlimited LLM API requests</p>
                             </li>
                             <li class="flex items-start">
                                 <div class="flex-shrink-0">
@@ -662,6 +664,17 @@ speedbuild import auth_system new_project
                                     </svg>
 
                                 </div>
+                                <p class="ml-3 text-sm text-gray-700 transition-colors duration-200">Automated testing of extracted features</p>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="flex-shrink-0">
+                                    
+                                    <svg class="h-6 w-6 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                    </svg>
+
+                                </div>
+                                <p class="ml-3 text-sm text-gray-700 transition-colors duration-200">Test driven feature deployment</p>
                             </li>
                         </ul>
                         <a href="#" class="mt-8 block w-full bg-gray-50 border border-gray-300 rounded-md py-2 text-sm font-semibold text-gray-700 text-center hover:bg-gray-100 transition-colors duration-200">
